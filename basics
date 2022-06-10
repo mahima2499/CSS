@@ -1,0 +1,74 @@
+selector {
+  property : value;
+  }
+common text properties ~ text-align, font-weight, line-height, text-decoration, letter-spacing
+font-size
+Universal selector (select everything) *
+ID selector - unique identifier (used only once with the same name)
+#idname {
+  property : value;
+  }
+
+Class selectors (class - group together the content in a web page)
+The CSS class selector matches elements based on the contents of their class attribute.
+
+Descendant Selector - select all <a>'s that are nested inside an <li>
+li a {
+  color : teal;
+  }
+Adjacent selector - select only paragraphs that are immediately preceeded by an <h1>
+h2 + p {
+  color : red;
+  }
+
+Direct Child 
+select only the <li>'s that are direct children of a <div> element.
+div > li {
+  color : white;
+  }
+Attribute selector - select all input elements with a particular attribute
+
+Pseudo-classes
+A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). 
+For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+/* Any button over which the user's pointer is hovering */
+button:hover {
+  color: blue;
+}
+
+Pseudo-elements
+A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). 
+For example, ::first-line can be used to change the font of the first line of a paragraph.
+/* The first line of every <p> element. */
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+Cascading - order matters!
+
+Specificity - Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. 
+Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
+id > class > element
+
+border - box-sizing: border-box (to fit in the box only)
+padding - spacing bw the actual content and the border of the box element
+margin - spacing outside bw border and other elements
+opacity
+The opacity CSS property sets the opacity of an element. 
+Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+z-index
+The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. 
+Overlapping elements with a larger z-index cover those with a smaller one.
+
+float
+The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
+The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).
+
+overflow
+The overflow CSS shorthand property sets the desired behavior for an element's overflow — 
+i.e. when an element's content is too big to fit in its block formatting context — in both directions.
+
+box-shadow
+The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. 
+A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.
+
